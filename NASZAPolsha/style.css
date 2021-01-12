@@ -1,0 +1,249 @@
+/*
+Theme Name:     NASZAPolsha
+Theme URI:      http://naszapolshcha.pl/
+Description:    ПОРТАЛ ТОВАРИСТВО УКРАЇНЦIВ У ПОЛЬЩІ
+Author:         Burhan Maxim
+Author URI:     http://mbn.pp.ua
+Template:       kleo
+Tags:  one-column, two-columns, right-sidebar, fluid-layout, custom-menu, featured-images, post-formats, sticky-post, translation-ready
+License: GNU General Public License
+License URI: license.txt
+*/
+
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    padding: 10px;
+    border-radius: 0;
+    /*float: left;*/
+    background: #ffffff;
+    border: 1px solid #fd3300;
+    color: #fd3300;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    /*height: 40px;*/
+
+}
+.nav-theme {
+    background: #e5e5e5;
+    -webkit-box-shadow: 0 3px 9px 0 #b8b8b8;
+    box-shadow: 0 3px 9px 0 #b8b8b8;
+    margin: 0;
+}
+.nav-theme .menus-wrap {
+    max-height: 60px;
+}
+/*.navbar-header {
+    float: left;
+    max-width: 30%;
+}
+.navbar-header .logo a {
+    padding-top: 30px;
+}
+.navbar-header .logo img{
+    margin-top: -40px;
+}*/
+.navbar-header .logo a em {
+    color: #fd3300;
+    font-size: 15px;
+    line-height: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-style: normal;
+    display: inline-block;
+    width: 35%;
+    font-weight: 400;
+}
+/*.header-banner {
+    float: right;
+}
+.header-banner .wpb_content_element, .header-banner .sidebar .widget {
+    margin: 0;
+    padding: 0;
+}
+.header-banner .widget_nav_menu:first-child {
+    float: left;
+}
+.header-banner .widget_nav_menu:last-child {
+    float: right;
+}
+[id*="menu-lang-menu"].menu {
+    float: right;
+}
+[id*="menu-lang-menu"].menu li a {
+    margin-right: 0 !important;
+    margin-left: 25px;
+}
+.menu-item-language {
+    border: 0;
+}
+[id*="menu-lang-menu"] a:hover, [id*="menu-lang-menu"].menu .menu-item-language-current a {
+    color: #fd3300;
+}
+.header-banner .menu {
+    display: flex;
+    padding: 30px 0 10px;
+}
+.header-banner .menu li {
+    display: inline-block
+}
+.header-banner .menu li a {
+    text-transform: uppercase;
+    border: none;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 0;
+    margin-right: 25px;
+    color: #9d9d9d;
+}
+.header-banner #buddypress {
+    margin-bottom: 30px;
+}
+.header-banner #buddypress .form-group {
+    float: left;
+    width: 65%;
+    margin: 0;
+}
+.header-banner #buddypress .form-group .description {
+    display: none;
+}
+.header-banner #buddypress .form-group input#field_any {
+    background: #fff url(img/input-search.png) no-repeat center right 10px;
+    height: 40px;
+    line-height: 40px;
+    font-style: italic;
+    font-size: 13px;
+    color: #a6a6a6;
+    padding: 0 40px 0 20px;
+    border: 1px solid #cacaca;
+    outline: 0;
+    border-radius: 0;
+}
+.header-banner #buddypress .form-submit {
+    width: 30%;
+    margin: 0 0 0 5%;
+    padding: 10px 0;
+    border-radius: 0;
+    float: left;
+    background: #ffffff;
+    border: 1px solid #fd3300;
+    color: #fd3300;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    height: 40px;
+}
+[id*="menu-main"] > li.active > a, [id*="menu-main"].nav > li > a:hover, [id*="menu-account-menu"] >li:hover>a {
+    box-shadow: inset 0px 2px 0px 0px #fd3300;
+}
+.secondary-menu .nav >li >a:hover {
+    box-shadow: inset 0px 2px 0px 0px #fd3300;
+    background: #fff;
+}
+*/
+[id*="menu-main"] > li > a {
+    color: #636363;
+    text-transform: uppercase;
+}
+/*
+[id*="menu-main"] > li > a:before {
+    content: '';
+    width: 1px;
+    height: 28px;
+    margin: 16px 0 0 -12px;
+    background: #cccccc;
+    display: block;
+    float: left;
+}
+[id*="menu-main"] > li:first-child > a:before {
+    display: none;
+}
+[id*="menu-account-menu"] >li>a{
+    text-transform: uppercase;
+    background: #fd3300;
+    color: #fff;
+    margin: 0 0 -5px;
+    padding: 0 25px;
+}
+[id*="menu-account-menu"] >li:first-child>a, [id*="menu-account-menu"] >li:hover>a{
+    background: #ffffff;
+    color: #636363;
+}*/
+/*[id*="menu-footer-menu"] {
+    text-align: center;
+}
+[id*="menu-footer-menu"] li {
+    display: inline-block;
+}
+[id*="menu-footer-menu"] li a {
+    padding: 0;
+    border: 0;
+    text-transform: uppercase;
+    color: #f3f3f3;
+    border-left: 1px solid #cccccc;
+    padding: 0 15px
+}
+[id*="menu-footer-menu"] li:first-child a {
+    border: 0;
+}
+#footer-sidebar-2 .widget_text img {
+    float: left;
+    margin-right: 25px;
+}
+#footer-sidebar-2 .widget_text .copyright {
+    display: block;
+    color: #f3f3f3;
+    margin: 0;
+    font-size: 12px;
+    line-height: 12px;
+}*/
+[id*="menu-social-menu"] {
+    text-align: right;
+}
+[id*="menu-social-menu"] li {
+    display: inline-block;
+}
+[id*="menu-social-menu"] li a {
+    border: 0;
+    width: 34px;
+    height: 34px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-left: 20px;
+}
+[id*="menu-social-menu"] .facebook {
+    background: url(img/facebook.png) no-repeat center right;
+}
+[id*="menu-social-menu"] .youtube {
+    background: url(img/youtube.png) no-repeat center right;
+}
+[id*="menu-social-menu"] .google {
+    background: url(img/google.png) no-repeat center right;
+}
+[id*="menu-social-menu"] .twitter {
+    background: url(img/twitter.png) no-repeat center right;
+}
+[id*="menu-social-menu"] .rss {
+    background: url(img/rss.png) no-repeat center right;
+}
+#footer-sidebar-4 {
+    color: #a9a9a9;
+}
+.blsearchbuttons input, .blsearchbuttons button {
+    margin: 2% 2% 2% 0;
+    padding: 10px;
+    border-radius: 0;
+    float: left;
+    background: #ffffff;
+    border: 1px solid #fd3300;
+    color: #fd3300;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    height: 40px;
+}
+.blsearchwhere, .blsearchname {
+    float: left;
+    margin: 0 2% 2% 0;
+}
