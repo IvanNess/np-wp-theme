@@ -1,6 +1,11 @@
 CHANGELOG
 =======
 
+
+Styczeń: 
+- Delete analytics plugins UA-171800873-1
+- Update all plugins (25 items)
+
 * unset all thumbnail sizes: 
 
 -thumbnail: 480×270 pixels (proportionally resized to fit inside dimensions)

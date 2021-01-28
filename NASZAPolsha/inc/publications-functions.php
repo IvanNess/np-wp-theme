@@ -64,8 +64,8 @@ if (!function_exists('publications_cat_taxonomy')) :
 
     function publications_cat_taxonomy() {
         $labels = array(
-            'name' => 'Категории',
-            'singular_name' => 'Категория',
+            'name' => 'Categories',
+            'singular_name' => 'Categories',
             'search_items' => 'Поиск Категории',
             'all_items' => 'Все Категории',
             'parent_item' => 'Родительская Категория:',
@@ -73,7 +73,7 @@ if (!function_exists('publications_cat_taxonomy')) :
             'update_item' => 'Обновить Категорию',
             'add_new_item' => 'Добавить новую Категорию',
             'new_item_name' => 'Новая Категория имя',
-            'menu_name' => 'Категории',
+            'menu_name' => 'Categories',
             'view_item' => 'Посмотреть Категории'
         );
 
@@ -165,5 +165,3 @@ if (!function_exists('register_publications')) :
 endif;
 
 add_action('init', 'register_publications');
-
-
