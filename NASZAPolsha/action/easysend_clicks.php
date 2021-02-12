@@ -54,9 +54,9 @@ if (isset($_POST)) {
         );
         $post_id = wp_insert_post($post_data, true);
         if (is_wp_error($post_id)) {
-            echo 'Не удалось записать ' . $title;
+            echo 'Could not record ' . $title;
         } else {
-            echo 'Есть записать! ' . $title;
+            echo 'Have a record! ' . $title;
             $easysend_clicks_meta = [];
             $easysend_clicks_meta[] = [
                 'url' => $_POST['url'],

@@ -10,7 +10,7 @@ $args = array(
 );
 
 
-$related_text = 'Останні адреси';
+$related_text = 'Recent addresses';
 
 $categories = get_object_taxonomies('addresses');
 

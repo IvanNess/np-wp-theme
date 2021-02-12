@@ -23,7 +23,7 @@ kleo_switch_layout('no');
     <?php } ?>
     <div class="page_test_sub_title">
         <div class="page_test_sub_title_box">
-            <h4>Сьогодні про:</h4>
+            <h4>Today about:</h4>
             <h3><?php echo the_title(); ?></h3>
         </div>
     </div>

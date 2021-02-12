@@ -96,13 +96,13 @@ foreach ($posts as $post) {
 
 wp_reset_postdata();
 ?>
-<a class="btn with-icon btn-default <?php echo ($charts) ? '' : 'active'; ?>" href="https://dev.nashapolsha.pl/easysend-statistics/"><i class="icon-calendar"></i> Календар</a>
-<a class="btn with-icon btn-default <?php echo ($charts) ? 'active' : ''; ?>" href="https://dev.nashapolsha.pl/easysend-statistics/?charts"><i class="icon-chart-bar"></i> Діаграми</a>
+<a class="btn with-icon btn-default <?php echo ($charts) ? '' : 'active'; ?>" href="https://dev.nashapolsha.pl/easysend-statistics/"><i class="icon-calendar"></i> Calendar</a>
+<a class="btn with-icon btn-default <?php echo ($charts) ? 'active' : ''; ?>" href="https://dev.nashapolsha.pl/easysend-statistics/?charts"><i class="icon-chart-bar"></i> Charts</a>
 <?php if ($charts) { ?>
     <div class="pull-right charts-selector">
-        <button class="btn btn-default button_y active">Рік</button>
-        <button class="btn btn-default button_m">Місяць</button>
-        <button class="btn btn-default button_w">Тиждень</button>
+        <button class="btn btn-default button_y active">Year</button>
+        <button class="btn btn-default button_m">Month</button>
+        <button class="btn btn-default button_w">Week</button>
     </div>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chartist/0.10.1/chartist.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
@@ -177,7 +177,7 @@ wp_reset_postdata();
         }
     </style>
     <div class="app">
-        <h1>Діаграми</h1>
+        <h1>Charts</h1>
         <center>
             <div class="charts" style="background: inherit;">
                 <div data-duration="500" class="charts-loader enabled" style="display: none; position: relative; top: 170px; height: 0;">
@@ -266,10 +266,10 @@ wp_reset_postdata();
                 var data = google.visualization.arrayToDataTable([
                     [
                         '',
-                        "Главная",
-                        "Запись",
-                        "Кнопка",
-                        "Сайтбар",
+                        "Main",
+                        "Record",
+                        "Button",
+                        "Sitebar",
                     ],<?php echo $draw_year; ?>])
 
                 var options = {
@@ -292,10 +292,10 @@ wp_reset_postdata();
                 var data = google.visualization.arrayToDataTable([
                     [
                         '',
-                        "Главная",
-                        "Запись",
-                        "Кнопка",
-                        "Сайтбар",
+                        "Main",
+                        "Record",
+                        "Button",
+                        "Sitebar",
                     ],<?php echo $draw_month; ?>])
 
                 var options = {
@@ -318,10 +318,10 @@ wp_reset_postdata();
                 var data = google.visualization.arrayToDataTable([
                     [
                         '',
-                        "Главная",
-                        "Запись",
-                        "Кнопка",
-                        "Сайтбар",
+                        "Main",
+                        "Record",
+                        "Button",
+                        "Sitebar",
                     ],<?php echo $draw_week; ?>])
 
                 var options = {
@@ -356,11 +356,11 @@ wp_reset_postdata();
                 } */
     </style>
     <div class="pull-right locale-selector">
-        <label for="locale-selector">Мови:</label>
+        <label for="locale-selector">Languages:</label>
         <div class="clearfix"></div>
         <select name="locale-selector" id="locale-selector" class="skin-select"></select>
     </div>
-    <h1>Календар</h1>
+    <h1>Calendar</h1>
     <div id='calendar'></div>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.8.0/fullcalendar.min.css'/>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js'></script>
@@ -378,10 +378,10 @@ wp_reset_postdata();
                         right: 'year,month,agendaWeek,agendaDay listYear,listMonth,listWeek,listDay'
                     },
                     views: {
-                        listDay: {buttonText: 'за день'},
-                        listWeek: {buttonText: 'за тиждень'},
-                        listMonth: {buttonText: 'за місяць'},
-                        listYear: {buttonText: 'за рік'},
+                        listDay: {buttonText: 'in a day'},
+                        listWeek: {buttonText: 'in a week'},
+                        listMonth: {buttonText: 'in a month'},
+                        listYear: {buttonText: 'in a year'},
                     },
                     locale: initialLocaleCode,
                     weekNumbers: true,

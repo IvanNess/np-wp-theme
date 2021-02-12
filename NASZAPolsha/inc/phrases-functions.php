@@ -4,17 +4,17 @@ if (!function_exists('phrases_cat_taxonomy')) :
 
     function phrases_cat_taxonomy() {
         $labels = array(
-            'name' => 'Категории',
-            'singular_name' => 'Категория',
-            'search_items' => 'Поиск Категории',
-            'all_items' => 'Все Категории',
-            'parent_item' => 'Родительская Категория:',
-            'edit_item' => 'Редактировать Категорию:',
-            'update_item' => 'Обновить Категорию',
-            'add_new_item' => 'Добавить новую Категорию',
-            'new_item_name' => 'Новая Категория имя',
-            'menu_name' => 'Категории',
-            'view_item' => 'Посмотреть Категории'
+            'name' => 'Categories',
+            'singular_name' => 'Category',
+            'search_items' => 'Search Category',
+            'all_items' => 'All Categories',
+            'parent_item' => 'Parent Category:',
+            'edit_item' => 'Edit Category:',
+            'update_item' => 'Update Category',
+            'add_new_item' => 'Add new Category',
+            'new_item_name' => 'New Category name',
+            'menu_name' => 'Categories',
+            'view_item' => 'View Categories'
         );
 
         $args = array(
@@ -34,19 +34,19 @@ if (!function_exists('phrases_tag_taxonomy')) :
 
     function phrases_tag_taxonomy() {
         $labels = array(
-            'name' => 'Теги',
-            'singular_name' => 'Тег',
-            'search_items' => 'Поиск Теги',
-            'popular_items' => ( 'Популярные Теги' ),
+            'name' => 'Tags',
+            'singular_name' => 'Tag',
+            'search_items' => 'Search Tags',
+            'popular_items' => ( 'Popular Tags' ),
             'parent_item' => null,
             'parent_item_colon' => null,
-            'all_items' => 'Все Теги',
-            'edit_item' => 'Редактировать Тег:',
-            'update_item' => 'Обновить Тег',
-            'add_new_item' => 'Добавить новый Тег',
-            'new_item_name' => 'Новый Тег имя',
-            'menu_name' => 'Теги',
-            'view_item' => 'Посмотреть Теги'
+            'all_items' => 'All Tags',
+            'edit_item' => 'Edit Tag:',
+            'update_item' => 'Update Tag',
+            'add_new_item' => 'Add new Tag',
+            'new_item_name' => 'New Tag name',
+            'menu_name' => 'Tags',
+            'view_item' => 'View Tags'
         );
 
         $args = array(
@@ -66,18 +66,18 @@ if (!function_exists('register_phrases')) :
 
     function register_phrases() {
         $labels = array(
-            'name' => 'Фразы',
-            'singular_name' => 'Фраза',
-            'add_new' => 'Добавить новую Фразу',
-            'add_new_item' => 'Добавить новую Фразу',
-            'edit_item' => 'Редактировать Фразу',
-            'new item' => 'Новая Фраза',
-            'all_items' => 'Все Фразы',
-            'view_item' => 'Посмотреть Фразу',
-            'search_items' => 'Поиск Фраз',
-            'not_found' => 'Не найдено ни одной Фразы',
-            'not_found_in_trash' => 'В корзине нет Фраз',
-            'menu_name' => 'Фразы'
+            'name' => 'Phrases',
+            'singular_name' => 'Phrase',
+            'add_new' => 'Add new Phrase',
+            'add_new_item' => 'Add new Phrase',
+            'edit_item' => 'Edit Phrase',
+            'new item' => 'New Phrase',
+            'all_items' => 'All Phrases',
+            'view_item' => 'View Phrase',
+            'search_items' => 'Search Phrases',
+            'not_found' => 'No Phrases found',
+            'not_found_in_trash' => 'There are no Phrases in the trash',
+            'menu_name' => 'Phrases'
         );
 
         $args = array(

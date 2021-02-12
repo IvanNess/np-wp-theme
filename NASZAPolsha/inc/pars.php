@@ -58,9 +58,9 @@ if (isset($_GET['classifieds'])) {
                 $thumbnail_id = get_post_thumbnail_id($id);
                 if (!empty($thumbnail_id)) {
                     if (set_post_thumbnail($post_id, $thumbnail_id))
-                        echo 'Миниатюра установлена.';
+                        echo 'Thumbnail set.';
                     else
-                        echo 'Миниатюра удалена.';
+                        echo 'Thumbnail deleted.';
                 }
                 $arg = array(
                     'ID' => $post_id,
@@ -83,7 +83,7 @@ if (isset($_GET['classifieds'])) {
                     'post_content' => $metas->post_content,
                     'post_status' => 'publish',
                     'post_author' => $metas->post_author,
-                    'post_date' => $metas->post_date, // Время, когда запись была создана.
+                    'post_date' => $metas->post_date, // The time the record was created.
                     'post_date_gmt' => $metas->post_date_gmt,
                     'post_name' => $metas->post_name,
                     'post_type' => 'classifieds',
@@ -103,9 +103,9 @@ if (isset($_GET['classifieds'])) {
                 } else {
                     if (!empty($img_array)) {
                         if (set_post_thumbnail($post_ids, $img_array[0]->id))
-                            echo 'Миниатюра установлена.';
+                            echo 'Thumbnail set.';
                         else
-                            echo 'Миниатюра удалена.';
+                            echo 'Thumbnail deleted.';
                     }
                     wp_set_post_terms($post_ids, $metas->geodir_city, 'classified_tags');
                     $gd_classifiedcategory = get_term_by('id', $metas->default_category, 'gd_classifiedcategory');

@@ -54,7 +54,7 @@ if (!empty($actual_by) && $today_date > $actual_by) {
             ?>
         </div>
         <div class="job_info_box">
-            <div class="title_job_info">Пропозиція:</div>
+            <div class="title_job_info">Offer:</div>
             <div class="lineb">
                 <div class="company">
                     <?php
@@ -116,7 +116,7 @@ if (!empty($actual_by) && $today_date > $actual_by) {
             $salary_type = get_post_meta($post_id, '_job_salary_type', true);
             $salary_type_view = (!empty($salary_type)) ? '<strong>' . $salary_type . '</strong>' : '';
             ?>
-            <div class="title_job_info">Зарплата: <?php echo $salary_type_view; ?></div>
+            <div class="title_job_info">Salary: <?php echo $salary_type_view; ?></div>
             <div class="lineb">
                 <strong class="box_job_salary">
                     <?php
@@ -132,7 +132,7 @@ if (!empty($actual_by) && $today_date > $actual_by) {
                     }
                     ?>
                 </strong>
-                <div class="more_about_job">Детальніше</div>
+                <div class="more_about_job">Read More</div>
             </div>
         </div>
         <?php
@@ -141,7 +141,7 @@ if (!empty($actual_by) && $today_date > $actual_by) {
             if (!empty($is_position_featured_top)) {
                 delete_post_meta($post_id, 'is_position_featured_top');
             }
-            echo '<span class="job_expires">закрита</span>';
+            echo '<span class="job_expires">closed</span>';
         }
         ?>
     </a>

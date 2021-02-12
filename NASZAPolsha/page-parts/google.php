@@ -24,7 +24,7 @@
 </script>
 <?php
 if (false) {
-    wp_enqueue_script('jquery'); /* подключаем jQuery */
+    wp_enqueue_script('jquery'); /* connect jQuery */
     global $post;
     $views_id = intval($post->ID);
     $site_url = get_stylesheet_directory_uri();

@@ -1,8 +1,8 @@
 
 <section id="classifieds_categories_widget" class="widget" style="margin-bottom: 20px;">
     <div class="classifieds-row">
-        <a class="btn letter-spacing-2px btn-highlight text-uppercase btn_add_classified" href="https://dev.nashapolsha.pl/my-jobs/add-job">+ Додати вакансію / Dodaj ogłoszenie</a>
-        <h2 class="classifieds-title">Praca / Робота в Польщі</h2>
+        <a class="btn letter-spacing-2px btn-highlight text-uppercase btn_add_classified" href="https://dev.nashapolsha.pl/my-jobs/add-job">+ Add a vacancy / Dodaj ogłoszenie</a>
+        <h2 class="classifieds-title">Praca / Work in Poland</h2>
         <?php
 //        $obj = get_queried_object();
         $query_id = get_queried_object_id();
@@ -14,7 +14,7 @@
         );
 
         $terms = get_terms('job_category', $cat_args);
-        echo '<div class="col-lg-6"><h4>Категорії</h4><select class="dynamic_select"><option value="https://dev.nashapolsha.pl/job/">Усі</option>';
+        echo '<div class="col-lg-6"><h4>Categories</h4><select class="dynamic_select"><option value="https://dev.nashapolsha.pl/job/">All</option>';
         foreach ($terms as $taxonomy) {
             $term_slug = $taxonomy->slug;
             $term_link = get_term_link($taxonomy->term_id, 'job_category');
@@ -42,7 +42,7 @@
         );
 
         $types = get_terms('job_type', $type_args);
-        echo '<div class="col-lg-6"><h4>Типи зайнятості</h4><select class="dynamic_select"><option value="https://dev.nashapolsha.pl/job/">Усі</option>';
+        echo '<div class="col-lg-6"><h4>Types of employment</h4><select class="dynamic_select"><option value="https://dev.nashapolsha.pl/job/">All</option>';
         foreach ($types as $taxonomy) {
             $term_slug = $taxonomy->slug;
             $term_link = get_term_link($taxonomy->term_id, 'job_type');
@@ -56,7 +56,7 @@
     <section id="classified_tags_widget" class="widget widget_tag_cloud">
         <?php
         if (function_exists('wp_tag_cloud')) {
-            echo '<h3 class="widget-title">Типи зайнятості</h3><div class="tagcloud">';
+            echo '<h3 class="widget-title">Types of employment</h3><div class="tagcloud">';
             wp_tag_cloud(array(
                 'smallest' => 8,
                 'largest' => 8,

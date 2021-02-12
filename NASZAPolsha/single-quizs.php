@@ -23,7 +23,7 @@ get_template_part('page-parts/general-title-section');
     ?>
     <div class="page_test_sub_title">
         <div class="page_test_sub_title_box">
-            <h4>Сьогодні про:</h4>
+            <h4>Today about:</h4>
             <h3><?php echo the_title(); ?></h3>
         </div>
     </div>
@@ -43,7 +43,7 @@ get_template_part('page-parts/general-title-section');
     get_template_part('page-parts/general-before-wrap');
     while (have_posts()) : the_post();
         if (false) {
-            echo '<h5>Оберіть правильну відповідь на запитання:</h5>';
+            echo '<h5>Choose the correct answer to the question:</h5>';
             get_template_part('content', get_post_format());
         } else {
             ?>
@@ -51,10 +51,10 @@ get_template_part('page-parts/general-title-section');
                 <div id="quiz">
                     <div id="quiz-header">
                         <!--<h1>jQuery Quiz Plugin</h1>-->
-                        <p class="faded">Оберіть правильну відповідь на запитання:</p>
+                        <p class="faded">Choose the correct answer to the question:</p>
                     </div>
                     <div id="quiz-start-screen">
-                        <p><a href="#" id="quiz-start-btn" class="quiz-button btn letter-spacing-2px btn-highlight text-uppercase">Старт</a></p>
+                        <p><a href="#" id="quiz-start-btn" class="quiz-button btn letter-spacing-2px btn-highlight text-uppercase">Start</a></p>
                     </div>
                 </div>
                 <div id="quiz-results_btn" class="quiz-container">
@@ -62,8 +62,8 @@ get_template_part('page-parts/general-title-section');
                     echo get_field('quiz_result');
                     $quiz_dop_link = get_field('quiz_dop_link');
                     if (!empty($quiz_dop_link)) {
-                        echo '<p>Дізнатися більше</p>';
-                        echo '<p>Можна за <a href="' . $quiz_dop_link . '" class="btn btn-highlight">посиланням</a></p>';
+                        echo '<p>Learn more</p>';
+                        echo '<p>Follow the <a href="' . $quiz_dop_link . '" class="btn btn-highlight">link</a></p>';
                     }
                     ?>
                 </div>
@@ -83,13 +83,13 @@ get_template_part('page-parts/general-title-section');
                             //  startButton: '#quiz-start-btn',
                             //  homeButton: '#quiz-home-btn',
                             //  resultsScreen: '#quiz-results-screen',
-                            resultsFormat: 'Ви відповіли правильно %score з %total correct!',
+                            resultsFormat: 'You answered correctly %score of %total correct!',
                             gameOverScreen: '#quiz-gameover-screen',
                             // button text
-                            nextButtonText: 'Далі',
-                            finishButtonText: 'Закінчити',
-                            restartButtonText: 'Перезапустити',
-                            counterFormat: 'Питання %current з %total',
+                            nextButtonText: 'Further',
+                            finishButtonText: 'Finish',
+                            restartButtonText: 'Restart',
+                            counterFormat: 'Question %current of %total',
                             finishCallback: function () {
                                 $('#quiz-results_btn').fadeIn();
                             },
@@ -110,8 +110,8 @@ get_template_part('page-parts/general-title-section');
                 }
                 echo '],';
                 echo '"correctIndex": ' . $correct . ',
-"correctResponse": "Правильно!",
-"incorrectResponse": "Неправильно!"},';
+"correctResponse": "Right!",
+"incorrectResponse": "Wrong!"},';
             }
         }
         ?>

@@ -8,7 +8,7 @@ function nashapolsha_copyright() {
             var bodyElement = document.body;
             var selection = getSelection();
             var href = document.location.href;
-            var copyright = "<br><br>Джерело матеріалу: <a href='" + href + "'>" + href + "</a><br>© <?php bloginfo('name'); ?>";
+            var copyright = "<br><br>Source of material: <a href='" + href + "'>" + href + "</a><br>© <?php bloginfo('name'); ?>";
             var text = selection + copyright;
             var divElement = document.createElement('div');
             divElement.style.position = 'absolute';
@@ -26,7 +26,7 @@ function nashapolsha_copyright() {
 
 add_action('wp_footer', 'nashapolsha_copyright', 95);
 
-//изменение имени и email писем start 
+//start of name and email changing   
 function change_fromemail($email) {
     return 'noreply@nashapolsha.pl';
 }
@@ -37,7 +37,7 @@ function change_fromname($name) {
 
 add_filter('wp_mail_from', 'change_fromemail');
 add_filter('wp_mail_from_name', 'change_fromname');
-//изменение имени и email писем end
+//end of name and email changing
 
 add_action('init', 'remove_admin_bar');
 
@@ -55,7 +55,7 @@ function wpb_image_editor_default_to_gd( $editors ) {
 }
  add_filter( 'wp_image_editors', 'wpb_image_editor_default_to_gd' );
 
-//Теперь мы «научим» WordPress загружать стилевую таблицу для страницы входа в консоль.
+//Let's make WordPress load the styled table for the console login page
 function custom_login_page_css() {
     echo '<link rel="stylesheet" type="text/css" href="' . get_stylesheet_directory_uri() . '/login/login-styles.css" />';
 }
@@ -68,14 +68,14 @@ function custom_admin_css() {
     echo '<link rel="stylesheet" type="text/css" href="' . get_stylesheet_directory_uri() . '/assets/css/admin.css" />';
 }
 
-//Изменяем шрифты, используя Google Fonts для страницы входа в консоль.
+//Changing fonts using Google Fonts for the console login page.
 function custom_login_page_fonts() {
     echo '<link href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet" type="text/css" />';
 }
 
 add_action('login_head', 'custom_login_page_fonts');
 
-//Добавляем  jQuery-эффект “Fade-In” к форме для страницы входа в консоль.
+//Add a jQuery “Fade-In” effect to the form for the console login page.
 add_action('login_head', 'untame_fadein', 30);
 
 function untame_fadein() {

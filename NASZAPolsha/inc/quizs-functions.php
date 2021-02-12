@@ -4,17 +4,17 @@ if (!function_exists('quizs_cat_taxonomy')) :
 
     function quizs_cat_taxonomy() {
         $labels = array(
-            'name' => 'Категории',
-            'singular_name' => 'Категория',
-            'search_items' => 'Поиск Категории',
-            'all_items' => 'Все Категории',
-            'parent_item' => 'Родительская Категория:',
-            'edit_item' => 'Редактировать Категорию:',
-            'update_item' => 'Обновить Категорию',
-            'add_new_item' => 'Добавить новую Категорию',
-            'new_item_name' => 'Новая Категория имя',
-            'menu_name' => 'Категории',
-            'view_item' => 'Посмотреть Категории'
+            'name' => 'Categories',
+            'singular_name' => 'Category',
+            'search_items' => 'Search Category',
+            'all_items' => 'All Categories',
+            'parent_item' => 'Parent Category:',
+            'edit_item' => 'Edit Category:',
+            'update_item' => 'Update Category',
+            'add_new_item' => 'Add New Category',
+            'new_item_name' => 'New Category name',
+            'menu_name' => 'Categories',
+            'view_item' => 'View Categories'
         );
 
         $args = array(
@@ -34,19 +34,19 @@ if (!function_exists('quizs_tag_taxonomy')) :
 
     function quizs_tag_taxonomy() {
         $labels = array(
-            'name' => 'Теги',
-            'singular_name' => 'Тег',
-            'search_items' => 'Поиск Теги',
-            'popular_items' => ( 'Популярные Теги' ),
+            'name' => 'Tags',
+            'singular_name' => 'Tag',
+            'search_items' => 'Search Tags',
+            'popular_items' => ( 'Popular Tags' ),
             'parent_item' => null,
             'parent_item_colon' => null,
-            'all_items' => 'Все Теги',
-            'edit_item' => 'Редактировать Тег:',
-            'update_item' => 'Обновить Тег',
-            'add_new_item' => 'Добавить новый Тег',
-            'new_item_name' => 'Новый Тег имя',
-            'menu_name' => 'Теги',
-            'view_item' => 'Посмотреть Теги'
+            'all_items' => 'All Tags',
+            'edit_item' => 'Edit Tag:',
+            'update_item' => 'Update Tag',
+            'add_new_item' => 'Add New Tag',
+            'new_item_name' => 'New Tag name',
+            'menu_name' => 'Tags',
+            'view_item' => 'View Tags'
         );
 
         $args = array(
@@ -66,18 +66,18 @@ if (!function_exists('register_quizs')) :
 
     function register_quizs() {
         $labels = array(
-            'name' => 'Тести',
-            'singular_name' => 'Тест',
-            'add_new' => 'Добавить новый Тест',
-            'add_new_item' => 'Добавить новый Тест',
-            'edit_item' => 'Редактировать Тест',
-            'new item' => 'Новый Тест',
-            'all_items' => 'Все Тести',
-            'view_item' => 'Посмотреть Тест',
-            'search_items' => 'Поиск Тести',
-            'not_found' => 'Не найдено ни одного Теста',
-            'not_found_in_trash' => 'В корзине нет Тестов',
-            'menu_name' => 'Тести'
+            'name' => 'Tests',
+            'singular_name' => 'Test',
+            'add_new' => 'Add New Test',
+            'add_new_item' => 'Add New Test',
+            'edit_item' => 'Edit Test',
+            'new item' => 'New Test',
+            'all_items' => 'All Tests',
+            'view_item' => 'View Test',
+            'search_items' => 'Search Tests',
+            'not_found' => 'No Tests found',
+            'not_found_in_trash' => 'There are no Tests in the trash',
+            'menu_name' => 'Tests'
         );
 
         $args = array(

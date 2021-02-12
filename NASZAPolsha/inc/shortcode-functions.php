@@ -1,8 +1,8 @@
 <?php
-/* Отображение количества просмотров      */
-/* display - отображать или возвращать    */
-/* prefix - текст перед числом просмотров */
-/* postfix - текст после числа просмотров */
+/* Display the number of views      */
+/* display - display or return    */
+/* prefix - text before the number of views */
+/* postfix - text after the number of views*/
 
 function get_views($display = true, $prefix = '', $postfix = '') {
     $post_views = intval(post_custom('views'));
@@ -42,9 +42,9 @@ function get_most_viewed_fun($atts, $content = null) {
 
     $query = new WP_Query($args);
     $i = 0;
-//echo 'views – количество просмотров за все время существования топика;<br>
-//tviews — количество просмотров за сегодня;<br>
-//yviews – количество просмотров за вчера;<br>';
+//echo 'views – the number of views for the entire existence of the topic;<br>
+//tviews — the number of views for today;<br>
+//yviews – the number of views for yesterday;<br>';
     $table = '';
     $table .= '<div class="table-responsive"><table class="table table-hover">';
     $table .= '<thead><tr><th>#</th><th>Name</th><th>За все время</th><th>Последняя дата</th><th>В последний день</th><th>Днем раньше</th></tr></thead><tbody>';
@@ -59,17 +59,17 @@ function get_most_viewed_fun($atts, $content = null) {
             $table .= '<tr> <th scope="row">' . $i . '</th><td><a href="' . get_the_permalink() . '">' . get_the_title() . '</a></td><td>' . $views . '</td><td>' . $tdate . '</td><td>' . $tviews . '</td><td>' . $yviews . '</td></tr>';
         }
     } else {
-        // Постов не найдено
+        // No posts found
     }
     $table .= '</tbody></table></div>';
     return $table;
-    /* Возвращаем оригинальные данные поста. Сбрасываем $post. */
+    /* return the original data of the post. Reset $ post. */
     wp_reset_postdata();
 }
 
 add_shortcode('get_most_viewed', 'get_most_viewed_fun');
 
-// использование: [get_most_viewed]
+// use: [get_most_viewed]
 //[fb_follow]
 function fb_follow_func($atts) {
     return '<div class="fb-follow" data-href="https://www.facebook.com/NashaPL/" data-layout="button" data-size="large" data-show-faces="true" style="margin:20px auto 0;"></div>';
@@ -88,7 +88,7 @@ function my_list_child_pages() {
             $pageids[] = $page->ID;
 
         $args = array(
-            'title_li' => '', //'Дерево родительской страницы: ' . $parent,
+            'title_li' => '', //'Parent page tree: ' . $parent,
             'include' => $parent . ',' . implode(",", $pageids)
         );
         wp_list_pages($args);
@@ -100,7 +100,7 @@ add_shortcode('childpages', 'my_list_child_pages');
 
 //[list_archives]
 function list_archives_fun() {
-    // Aрхив записей сгруппированных по дням (за последние 20 дней)
+    // Archive of records grouped by days (for the last 20 days)
     echo '<div class="widget_archive"><ol>';
     wp_get_archives('type=daily&limit=20&show_post_count=1');
     echo '</ol></div>';

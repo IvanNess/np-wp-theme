@@ -3,17 +3,17 @@ if (!function_exists('job_category_taxonomy')) :
 
     function job_category_taxonomy() {
         $labels = array(
-            'name' => 'Категорії вакансій',
-            'singular_name' => 'Категорія вакансії',
-            'search_items' => 'Пошук Категорії вакансії',
-            'all_items' => 'Усі Категорії вакансій',
-            'parent_item' => 'Батьківська Категорія вакансії:',
-            'edit_item' => 'Редагувати Категорію вакансії:',
-            'update_item' => 'Обновити Категорію вакансії',
-            'add_new_item' => 'Додати нову Категорію вакансії',
-            'new_item_name' => 'Нова Категорія вакансії',
-            'menu_name' => 'Категорії вакансій',
-            'view_item' => 'Подивитися Категорію вакансії'
+            'name' => 'Job Categories',
+            'singular_name' => 'Job Category',
+            'search_items' => 'Search Job Category',
+            'all_items' => 'All Job Categories',
+            'parent_item' => 'Parent Job Categories:',
+            'edit_item' => 'Edit Job Category:',
+            'update_item' => 'Update Job Category',
+            'add_new_item' => 'Add a new Job Category',
+            'new_item_name' => 'New Job Category',
+            'menu_name' => 'Job Categories',
+            'view_item' => 'View Job Category'
         );
 
         $args = array(
@@ -35,18 +35,18 @@ if (!function_exists('job_type_taxonomy')) :
 
     function job_type_taxonomy() {
         $labels = array(
-            'name' => 'Типи зайнятості',
-            'singular_name' => 'Тип зайнятості',
-            'search_items' => 'Пошук Типу зайнятості',
+            'name' => 'Employment Types',
+            'singular_name' => 'Employment Time Type',
+            'search_items' => 'Search Employment Time Type',
             'parent_item' => null,
             'parent_item_colon' => null,
-            'all_items' => 'Усі Типи зайнятості',
-            'edit_item' => 'Редагувати Тип зайнятості:',
-            'update_item' => 'Обновити Тип зайнятості',
-            'add_new_item' => 'Додати новий Тип зайнятості',
-            'new_item_name' => 'Новий Тип зайнятості',
-            'menu_name' => 'Типи зайнятості',
-            'view_item' => 'Посмотреть Тип зайнятості'
+            'all_items' => 'All Employment Time Types',
+            'edit_item' => 'Edit Employment Time Type:',
+            'update_item' => 'Update Employment Time Type',
+            'add_new_item' => 'Add a new Employment Time Type',
+            'new_item_name' => 'New Employment Time Type',
+            'menu_name' => 'Employment Time Types',
+            'view_item' => 'View Employment Time Type'
         );
 
         $args = array(
@@ -68,18 +68,18 @@ if (!function_exists('job_type_contract_taxonomy')) :
 
     function job_type_contract_taxonomy() {
         $labels = array(
-            'name' => 'Тип договорів',
-            'singular_name' => 'Тип договору',
-            'search_items' => 'Пошук Типу договору',
+            'name' => 'Contract Types',
+            'singular_name' => 'Contract Type',
+            'search_items' => 'Search Contract Type',
             'parent_item' => null,
             'parent_item_colon' => null,
-            'all_items' => 'Усі Тип договорів',
-            'edit_item' => 'Редагувати Тип договору:',
-            'update_item' => 'Обновити Тип договору',
-            'add_new_item' => 'Додати новий Тип договору',
-            'new_item_name' => 'Новий Тип договору',
-            'menu_name' => 'Тип договорів',
-            'view_item' => 'Посмотреть Тип договору'
+            'all_items' => 'All Contract Types',
+            'edit_item' => 'Edit Contract Type:',
+            'update_item' => 'Update Contract Type',
+            'add_new_item' => 'Add a new Contract Type',
+            'new_item_name' => 'New Contract Type',
+            'menu_name' => 'Contract Types',
+            'view_item' => 'View Contract Type'
         );
 
         $args = array(
@@ -101,18 +101,18 @@ if (!function_exists('job_employment_taxonomy')) :
 
     function job_employment_taxonomy() {
         $labels = array(
-            'name' => 'Тип працевлаштування',
-            'singular_name' => 'Тип працевлаштування',
-            'search_items' => 'Пошук Типу працевлаштування',
+            'name' => 'Employment Type',
+            'singular_name' => 'Employment Type',
+            'search_items' => 'Search Employment Type',
             'parent_item' => null,
             'parent_item_colon' => null,
-            'all_items' => 'Усі Тип працевлаштування',
-            'edit_item' => 'Редагувати Тип працевлаштування:',
-            'update_item' => 'Обновити Тип працевлаштування',
-            'add_new_item' => 'Додати новий Тип працевлаштування',
-            'new_item_name' => 'Новий Тип працевлаштування',
-            'menu_name' => 'Тип працевлаштування',
-            'view_item' => 'Посмотреть Тип працевлаштування'
+            'all_items' => 'All Employment Types',
+            'edit_item' => 'Edit Employment Type:',
+            'update_item' => 'Update Employment Type',
+            'add_new_item' => 'Add new Employment Type',
+            'new_item_name' => 'New Employment Type',
+            'menu_name' => 'Employment Type',
+            'view_item' => 'View Employment Type'
         );
 
         $args = array(
@@ -134,18 +134,18 @@ if (!function_exists('register_job')) :
 
     function register_job() {
         $labels = array(
-            'name' => 'Вакансії',
-            'singular_name' => 'Вакансія',
-            'add_new' => 'Додати нову Вакансію',
-            'add_new_item' => 'Додати нову Вакансії',
-            'edit_item' => 'Редагувати Вакансію',
-            'new item' => 'Нова Вакансія',
-            'all_items' => 'Всі Вакансії',
-            'view_item' => 'Переглянути Вакансію',
-            'search_items' => 'Пошук Вакансії',
-            'not_found' => 'Не знайдено',
-            'not_found_in_trash' => 'В корзине нет Вакансії',
-            'menu_name' => 'Вакансії'
+            'name' => 'Vacancies',
+            'singular_name' => 'Vacancy',
+            'add_new' => 'Add a new Vacancy',
+            'add_new_item' => 'Add a new Vacancies',
+            'edit_item' => 'Edit Vacancy',
+            'new item' => 'New Vacancy',
+            'all_items' => 'All Vacancies',
+            'view_item' => 'View Vacancy',
+            'search_items' => 'Search Vacancy',
+            'not_found' => 'Not Found',
+            'not_found_in_trash' => 'There are no vacancies in the trash',
+            'menu_name' => 'Vacancies'
         );
 
         $args = array(
@@ -226,7 +226,7 @@ function add_job_btn_field() {
 //add_action('job_manager_job_filters_after', 'jooble_img',1);
 
 function jooble_img() {
-    echo '<div class="widget widget_media_image" style="text-align: center;margin-bottom: 15px;"><a href="https://ua.jooble.org/"><noscript><img width="150" height="150" src="https://dev.nashapolsha.pl/wp-content/uploads/2019/07/jooble-1038x545.png" class="image wp-image-12612  attachment-medium size-medium" alt="jooble - это один сайт, на котором Вы можете искать работу по всему Интернету." style="max-width: 100%; height: auto;" srcset="https://dev.nashapolsha.pl/wp-content/uploads/2019/07/jooble-1038x545.png 1038w, https://dev.nashapolsha.pl/wp-content/uploads/2019/07/jooble-768x403.png 768w, https://dev.nashapolsha.pl/wp-content/uploads/2019/07/jooble-672x353.png 672w, https://dev.nashapolsha.pl/wp-content/uploads/2019/07/jooble-300x158.png 300w, https://dev.nashapolsha.pl/wp-content/uploads/2019/07/jooble-600x315.png 600w, https://dev.nashapolsha.pl/wp-content/uploads/2019/07/jooble.png 1200w" sizes="(max-width: 1038px) 100vw, 1038px" /></noscript><img width="150" height="150" src="https://dev.nashapolsha.pl/wp-content/uploads/2019/07/jooble-1038x545.png" data-src="https://dev.nashapolsha.pl/wp-content/uploads/2019/07/jooble-1038x545.png" class="image wp-image-12612 attachment-medium size-medium lazyloaded smush-detected-img smush-image-12" alt="jooble - это один сайт, на котором Вы можете искать работу по всему Интернету." style="max-width: 100%; height: auto;" data-srcset="https://dev.nashapolsha.pl/wp-content/uploads/2019/07/jooble-1038x545.png 1038w, https://dev.nashapolsha.pl/wp-content/uploads/2019/07/jooble-768x403.png 768w, https://dev.nashapolsha.pl/wp-content/uploads/2019/07/jooble-672x353.png 672w, https://dev.nashapolsha.pl/wp-content/uploads/2019/07/jooble-300x158.png 300w, https://dev.nashapolsha.pl/wp-content/uploads/2019/07/jooble-600x315.png 600w, https://dev.nashapolsha.pl/wp-content/uploads/2019/07/jooble.png 1200w" data-sizes="(max-width: 1038px) 100vw, 1038px" sizes="(max-width: 1038px) 100vw, 1038px" srcset="https://dev.nashapolsha.pl/wp-content/uploads/2019/07/jooble-1038x545.png 1038w, https://dev.nashapolsha.pl/wp-content/uploads/2019/07/jooble-768x403.png 768w, https://dev.nashapolsha.pl/wp-content/uploads/2019/07/jooble-672x353.png 672w, https://dev.nashapolsha.pl/wp-content/uploads/2019/07/jooble-300x158.png 300w, https://dev.nashapolsha.pl/wp-content/uploads/2019/07/jooble-600x315.png 600w, https://dev.nashapolsha.pl/wp-content/uploads/2019/07/jooble.png 1200w"></a></div>';
+    echo '<div class="widget widget_media_image" style="text-align: center;margin-bottom: 15px;"><a href="https://ua.jooble.org/"><noscript><img width="150" height="150" src="https://dev.nashapolsha.pl/wp-content/uploads/2019/07/jooble-1038x545.png" class="image wp-image-12612  attachment-medium size-medium" alt="jooble - this is one site where you can search for jobs all over the internet." style="max-width: 100%; height: auto;" srcset="https://dev.nashapolsha.pl/wp-content/uploads/2019/07/jooble-1038x545.png 1038w, https://dev.nashapolsha.pl/wp-content/uploads/2019/07/jooble-768x403.png 768w, https://dev.nashapolsha.pl/wp-content/uploads/2019/07/jooble-672x353.png 672w, https://dev.nashapolsha.pl/wp-content/uploads/2019/07/jooble-300x158.png 300w, https://dev.nashapolsha.pl/wp-content/uploads/2019/07/jooble-600x315.png 600w, https://dev.nashapolsha.pl/wp-content/uploads/2019/07/jooble.png 1200w" sizes="(max-width: 1038px) 100vw, 1038px" /></noscript><img width="150" height="150" src="https://dev.nashapolsha.pl/wp-content/uploads/2019/07/jooble-1038x545.png" data-src="https://dev.nashapolsha.pl/wp-content/uploads/2019/07/jooble-1038x545.png" class="image wp-image-12612 attachment-medium size-medium lazyloaded smush-detected-img smush-image-12" alt="jooble - this is one site where you can search for jobs all over the internet." style="max-width: 100%; height: auto;" data-srcset="https://dev.nashapolsha.pl/wp-content/uploads/2019/07/jooble-1038x545.png 1038w, https://dev.nashapolsha.pl/wp-content/uploads/2019/07/jooble-768x403.png 768w, https://dev.nashapolsha.pl/wp-content/uploads/2019/07/jooble-672x353.png 672w, https://dev.nashapolsha.pl/wp-content/uploads/2019/07/jooble-300x158.png 300w, https://dev.nashapolsha.pl/wp-content/uploads/2019/07/jooble-600x315.png 600w, https://dev.nashapolsha.pl/wp-content/uploads/2019/07/jooble.png 1200w" data-sizes="(max-width: 1038px) 100vw, 1038px" sizes="(max-width: 1038px) 100vw, 1038px" srcset="https://dev.nashapolsha.pl/wp-content/uploads/2019/07/jooble-1038x545.png 1038w, https://dev.nashapolsha.pl/wp-content/uploads/2019/07/jooble-768x403.png 768w, https://dev.nashapolsha.pl/wp-content/uploads/2019/07/jooble-672x353.png 672w, https://dev.nashapolsha.pl/wp-content/uploads/2019/07/jooble-300x158.png 300w, https://dev.nashapolsha.pl/wp-content/uploads/2019/07/jooble-600x315.png 600w, https://dev.nashapolsha.pl/wp-content/uploads/2019/07/jooble.png 1200w"></a></div>';
 }
 
 class Max_Job_List_Widget extends WP_Widget {
@@ -374,7 +374,7 @@ add_action('widgets_init', function() {
     register_widget('Max_Job_List_Widget');
 });
 
-// добавляем запланированный хук
+// add the planned hook
 add_action('wp', 'job_order_activation');
 
 function job_order_activation() {
@@ -383,7 +383,7 @@ function job_order_activation() {
     }
 }
 
-// добавляем функцию к указанному хуку
+// add a function to the specified hook
 add_action('job_order_activation_event', 'job_order_activation_do_this');
 
 function job_order_activation_do_this() {
@@ -494,18 +494,18 @@ function job_order_activation_do_this() {
 add_action('pre_get_posts', 'job_query_set', 1);
 
 function job_query_set($query) {
-    // Выходим, если это админ-панель или не основной запрос.
+    // exit if this is the admin panel or not the main request.
     if (is_admin() || !$query->is_main_query())
         return;
 
 //	if( is_home() ){
-//		// Выводим только 1 пост на главной странице
+//		// display only 1 post on the main page
 //		$query->set( 'posts_per_page', 1 );
 //	}
 
 //    if ($query->is_post_type_archive('job')) {
     if (false) {
-        // Выводим 50 записей если это архив типа записи 'job'
+        // Display 50 records if it is an 'job' type archive 
         $query->set('meta_key', 'is_position_featured_top');
         $query->set('orderby', array(
 		'meta_value_num' => 'ASC',

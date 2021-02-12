@@ -69,10 +69,10 @@ function frontend_company_field($fields) {
 
 function frontend_add_salary_field($fields) {
     $fields['job']['job_salary'] = array(
-        'label' => __('Зарплата, зл/год', 'job_manager'),
+        'label' => __('Salary, PLN/hour', 'job_manager'),
         'type' => 'text',
         'required' => true,
-        'placeholder' => 'Наприклад, 10',
+        'placeholder' => 'Example, 10',
         'priority' => 7
     );
     return $fields;
@@ -109,9 +109,9 @@ if ( is_admin() ) {
             $fields['_job_location']['value'] = 'ul. ZAWODZIE 20, 80-726 GDAŃSK';
         }
         $fields['_job_salary'] = array(
-            'label' => __('Зарплата, зл/год', 'job_manager'),
+            'label' => __('Salary, PLN/hour', 'job_manager'),
             'type' => 'text',
-            'placeholder' => 'Наприклад, 10',
+            'placeholder' => 'Example, 10',
             'description' => ''
         );
         if (empty($job_salary)) {
@@ -131,7 +131,7 @@ function display_job_salary_data() {
     $salary = get_post_meta($post->ID, '_job_salary', true);
 
     if ($salary) {
-        echo '<li>' . __('Зарплата: ') . '<strong>' . esc_html($salary) . '</strong>' . __(' зл/год') . '</li>';
+        echo '<li>' . __('Salary: ') . '<strong>' . esc_html($salary) . '</strong>' . __(' зл/год') . '</li>';
     }
 }
 
@@ -148,11 +148,11 @@ function filter_by_salary_field() {
     <div class="search_categories" id="search_salary">
         <label for="search_categories"><?php _e('Salary', 'wp-job-manager'); ?></label>
         <select name="filter_by_salary" class="job-manager-filter" id="filter_by_salary">
-            <option value=""><?php _e('Будь-яка зарплата', 'wp-job-manager'); ?></option>
-            <option value="upto10"><?php _e('До 10 зл/год', 'wp-job-manager'); ?></option>
-            <option value="10-12"><?php _e('От 10 до 12 зл/год', 'wp-job-manager'); ?></option>
-            <option value="12-15"><?php _e('От 12 до 15 зл/год', 'wp-job-manager'); ?></option>
-            <option value="over15"><?php _e('15+ зл/год', 'wp-job-manager'); ?></option>
+            <option value=""><?php _e('Any salary', 'wp-job-manager'); ?></option>
+            <option value="upto10"><?php _e('Up to PLN 10/hour', 'wp-job-manager'); ?></option>
+            <option value="10-12"><?php _e('From 10 to 12 PLN/hour', 'wp-job-manager'); ?></option>
+            <option value="12-15"><?php _e('From 12 to 15 PLN/hour', 'wp-job-manager'); ?></option>
+            <option value="over15"><?php _e('15+ PLN/hour', 'wp-job-manager'); ?></option>
         </select>
     </div>
     <?php
@@ -248,7 +248,7 @@ function hrex_job_manager_logo($post_id) {
             if (empty($post_thumbnail)) {
                 // Add thumbnail to post
                 update_post_meta($post_id, $meta_key = '_thumbnail_id', $meta_value = '3570');
-                update_post_meta($post_id, $meta_key = 'sub_title', $meta_value = 'Тест вихідного дня. Наскільки добре ви обізнані з польськими законами.');
+                update_post_meta($post_id, $meta_key = 'sub_title', $meta_value = 'Weekend test. How well are you familiar with Polish laws?');
             }
         }
     }
@@ -268,13 +268,13 @@ function hrex_job_manager_logo($post_id) {
 //function quizs_function_excerpt(){
 //    if (get_post_type() == 'quizs') {
 //	if ( ! wp_is_post_revision( $post_id ) ){
-//		// удаляем этот хук, чтобы он не создавал бесконечного цикла
+//		// remove this hook so that it does not create an infinite loop
 //		remove_action('save_post', 'quizs_function_excerpt');
-//                $args['post_excerpt'] = 'Тест вихідного дня. Наскільки добре ви обізнані з польськими законами про '.$args['post_title'];
-//		// обновляем пост, когда снова вызовется хук save_post
+//                $args['post_excerpt'] = 'Weekend test. How well are you aware of Polish laws about'.$args['post_title'];
+//		// update the post when the save_post hook is called again
 //		wp_update_post( $args );
 //
-//		// снова вешаем хук
+//		// hang the hook again
 //		add_action('save_post', 'quizs_function_excerpt');
 //	}
 //    }

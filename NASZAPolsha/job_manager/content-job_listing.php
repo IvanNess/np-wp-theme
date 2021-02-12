@@ -41,7 +41,7 @@ global $post;
             ?>
         </div>
         <div class="job_info_box">
-            <div class="title_job_info">Пропозиція:</div>
+            <div class="title_job_info">Offer:</div>
             <div class="lineb">
                 <div class="company">
                     <?php the_company_name('<strong>', '</strong> '); ?>
@@ -72,7 +72,7 @@ global $post;
             $salary_type = get_post_meta($post_id, '_job_salary_type', true);
             $salary_type_view = (!empty($salary_type)) ? $salary_type : '';
             ?>
-            <div class="title_job_info">Зарплата: <?php echo $salary_type_view; ?></div>
+            <div class="title_job_info">Salary: <?php echo $salary_type_view; ?></div>
             <div class="lineb">
                 <strong class="box_job_salary"><?php
                     $post_id = $post->ID;
@@ -84,10 +84,10 @@ global $post;
                     if (!empty($values)) {
                         echo '<span>' . $values . '</span> ' . $price_tag_view;
                     } else {
-                        echo 'Договірна';
+                        echo 'Agreed';
                     }
                     ?></strong>
-                <div class="more_about_job">Детальніше</div>
+                <div class="more_about_job">Read more</div>
             </div>
         </div>
     </a>

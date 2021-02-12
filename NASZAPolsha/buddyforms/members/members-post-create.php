@@ -10,7 +10,7 @@
 
     $form_slug = $buddyforms_member_tabs[$bp->current_component][$bp->current_action];
     if($form_slug == 'add-classified'){
-        echo '<p>Оголошення про доступні вакансії розміщуються виключно в розділі "<a href="https://dev.nashapolsha.pl/my-jobs/add-job">Робота в Польщі</a>"
+        echo '<p>Ads for available vacancies are placed exclusively in the section "<a href="https://dev.nashapolsha.pl/my-jobs/add-job">Work in Poland</a>"
     <br>Oferty pracy są ogłaszane wyłącznie w sekcji „<a href="https://dev.nashapolsha.pl/my-jobs/add-job">Praca w Polsce</a>”.</p>';
     }
     if (bp_current_action() == $form_slug . '-create') {
@@ -43,7 +43,7 @@
         } else {
             $preview_type = 'classifieds';
         }
-        echo '<p>Ви можете попередньо переглянути оголошення <a href="https://dev.nashapolsha.pl/?post_type=' . $preview_type . '&p=' . $post_id . '" target="_blank" class="red_btn">тут</a></p>';
+        echo '<p>You can preview the ad <a href="https://dev.nashapolsha.pl/?post_type=' . $preview_type . '&p=' . $post_id . '" target="_blank" class="red_btn">here</a></p>';
     }
     buddyforms_create_edit_form($args);
     if ($form_slug != 'add-classified') {

@@ -38,7 +38,7 @@ if (get_cfield('related_posts') != '') {
 <?php get_template_part('page-parts/general-before-wrap'); ?>
 
 <?php /* Start the Loop */ ?>
-<?php the_terms(get_the_ID(), 'addresscategory', 'Категорії: '); ?>
+<?php the_terms(get_the_ID(), 'addresscategory', 'Categories: '); ?>
 <?php while (have_posts()) : the_post(); ?>
 
     <?php get_template_part('content', get_post_format()); ?>
@@ -63,7 +63,7 @@ if (get_cfield('related_posts') != '') {
     );
 
 
-    $related_text = 'Останні адреси';
+    $related_text = 'Recent addresses';
     $tax = 'addresscategory';
     $terms = wp_get_object_terms($post->ID, $tax, array('fields' => 'ids'));
 

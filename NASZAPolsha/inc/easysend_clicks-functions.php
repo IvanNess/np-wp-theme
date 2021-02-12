@@ -4,17 +4,17 @@ if (!function_exists('easysend_clicks_local_taxonomy')) :
 
     function easysend_clicks_local_taxonomy() {
         $labels = array(
-            'name' => 'Расположении',
-            'singular_name' => 'Расположение',
-            'search_items' => 'Поиск Расположении',
-            'all_items' => 'Все Расположении',
-            'parent_item' => 'Родительская Расположение:',
-            'edit_item' => 'Редактировать Категорию:',
-            'update_item' => 'Обновить Категорию',
-            'add_new_item' => 'Добавить новую Категорию',
-            'new_item_name' => 'Новая Расположение имя',
-            'menu_name' => 'Расположении',
-            'view_item' => 'Посмотреть Расположении'
+            'name' => 'Locations',
+            'singular_name' => 'Location',
+            'search_items' => 'Location Search',
+            'all_items' => 'All Locations',
+            'parent_item' => 'Parent Location:',
+            'edit_item' => 'Edit Category:',
+            'update_item' => 'Update Category',
+            'add_new_item' => 'Add a new Category',
+            'new_item_name' => 'New Location name',
+            'menu_name' => 'Locations',
+            'view_item' => 'View Locations'
         );
 
         $args = array(
@@ -35,8 +35,8 @@ if (!function_exists('register_easysend_clicks')) :
 function register_easysend_clicks() {
     register_post_type('easysend_clicks', array(
         'labels' => array(
-            'name' => 'EasySend Clicks', // Основное название типа записи
-            'singular_name' => 'EasySend Click', // отдельное название записи типа Book
+            'name' => 'EasySend Clicks', // main name of the record type
+            'singular_name' => 'EasySend Click', // separate record name of Book type
             'add_new' => 'Add New',
             'add_new_item' => 'Add new EasySend Click',
             'edit_item' => 'Edit EasySend Click',

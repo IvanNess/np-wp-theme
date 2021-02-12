@@ -118,11 +118,11 @@ function insert_post_ads($content) {
         $posts = get_posts($args);
         $related_text = esc_html__("Related Articles", "kleo_framework");
         $content_link = [];
-// Цикл
+// Cycle
         foreach ($posts as $pst) {
-            $content_link[] = '<p><em>Читайте також: <a href="' . get_permalink($pst->ID) . '">' . get_the_title($pst->ID) . '</a></em></p>';
+            $content_link[] = '<p><em>Read also: <a href="' . get_permalink($pst->ID) . '">' . get_the_title($pst->ID) . '</a></em></p>';
         }
-// Возвращаем оригинальные данные поста. Сбрасываем $post.
+// Return the original data of the post. Reset $ post.
         wp_reset_postdata();
         if (check_paragraph_count($content) > 6) {
             $content = insert_after_paragraph($content_link[0], 1, $content);
@@ -197,7 +197,7 @@ function check_paragraph_count($content) {
 if (function_exists('acf_add_options_page')) {
 
     acf_add_options_page(array(
-        'page_title' => 'Настройки Сайта',
+        'page_title' => 'Site settings',
         'menu_title' => 'NASHAPolsha',
         'menu_slug' => 'nashapolsha-general-settings',
         'icon_url' => 'dashicons-welcome-widgets-menus',
@@ -207,8 +207,8 @@ if (function_exists('acf_add_options_page')) {
 
 
     acf_add_options_sub_page(array(
-        'page_title' => 'Настройки Рекламы',
-        'menu_title' => 'Реклама',
+        'page_title' => 'Advertising settings',
+        'menu_title' => 'Advertising',
         'parent_slug' => 'nashapolsha-general-settings',
         'menu_slug' => 'reklama-general-settings',
 //        'icon_url' => 'dashicons-smiley',

@@ -30,7 +30,7 @@ if (is_active_sidebar('archive-top-sidebar')) {
     <div class="archive-description"><?php echo category_description(); ?></div>
 
 <?php } else { ?>
-    <div class="archive-description"><p>Безкоштовна дошка вакансій. Знайди достойну роботу для себе у Польщі...</p></div>
+    <div class="archive-description"><p>Free vacancy board. Find a decent job for yourself in Poland ...</p></div>
 <?php }; ?>
 <div class="job_filters">
     <?php get_template_part('page-parts/archive-search-job'); ?>

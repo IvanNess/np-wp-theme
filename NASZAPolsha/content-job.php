@@ -102,7 +102,7 @@ if (!empty($actual_by) && $today_date > $actual_by) {
                     if (!empty($is_position_featured_top)) {
                         delete_post_meta($post_id, 'is_position_featured_top');
                     }
-                    echo '<li class="listing-expired">Вакансія закрита</li>';
+                    echo '<li class="listing-expired">The vacancy is closed</li>';
                 }
                 $types = get_the_terms($post_id, 'job_type');
                 if (!empty($types)) : foreach ($types as $type) :
@@ -122,15 +122,15 @@ if (!empty($actual_by) && $today_date > $actual_by) {
                 $salary_type = get_post_meta($post_id, '_job_salary_type', true);
                 $salary_type_view = (!empty($salary_type)) ? $salary_type : '';
                 $price_tag = get_post_meta($post_id, '_job_price_tag', true);
-                $price_tag_view = (!empty($price_tag)) ? $price_tag : 'зл/год';
+                $price_tag_view = (!empty($price_tag)) ? $price_tag : 'PLN/hour';
                 if (!empty($salary)) {
-                    echo '<li><i class="icon-money"></i> Зарплата: ' . $salary_type_view . ' <strong>' . $salary . '</strong> ' . $price_tag_view . '</li>';
+                    echo '<li><i class="icon-money"></i> Salary: ' . $salary_type_view . ' <strong>' . $salary . '</strong> ' . $price_tag_view . '</li>';
                 } else {
-                    echo '<li><i class="icon-money"></i> Зарплата: <strong>Договірна</strong></li>';
+                    echo '<li><i class="icon-money"></i> Salary: <strong>Договірна</strong></li>';
                 }
                 $phone = get_post_meta($post_id, 'phone', true);
                 if (!empty($phone)) {
-                    echo '<li><div class="more_info_phone"><i class="icon-volume-control-phone"></i> Телефон: <a href="tel:' . $phone . '" style="color:#fd3300;">' . $phone . '</a><span class="mask_phone">зателефонувати</span></div></li>';
+                    echo '<li><div class="more_info_phone"><i class="icon-volume-control-phone"></i> Phone: <a href="tel:' . $phone . '" style="color:#fd3300;">' . $phone . '</a><span class="mask_phone">make a call</span></div></li>';
                 }
                 ?>
             </ul>
@@ -151,7 +151,7 @@ if (!empty($actual_by) && $today_date > $actual_by) {
                 echo '<p class="name">';
                 $company_website = get_post_meta($post_id, '_company_website', true);
                 if (!empty($company_website)) {
-                    echo '<a class="website" href="' . $company_website . '" rel="nofollow noopener" target="_blank">Сайт</a>';
+                    echo '<a class="website" href="' . $company_website . '" rel="nofollow noopener" target="_blank">Site</a>';
                 }
                 echo '<strong>' . $company_name . '</strong></p>';
                 $company_tagline = get_post_meta($post_id, '_company_tagline', true);
@@ -161,12 +161,12 @@ if (!empty($actual_by) && $today_date > $actual_by) {
                 echo '</div>';
             }
             if (!empty($actual_by) && $today_date > $actual_by) {
-                echo '<div class="job-expired-content">вакансія закрита</div>';
+                echo '<div class="job-expired-content">the vacancy is closed</div>';
             } else {
                 ?>
               <!--  <a href="#" class="job_application_button">Відгукнутися</a>
 
-                <div class="job_application_details" style="display: none;"><?php echo do_shortcode('[contact-form-7 id="4" title="Контактна форма"]'); ?></div>-->
+                <div class="job_application_details" style="display: none;"><?php echo do_shortcode('[contact-form-7 id="4" title="Contact form"]'); ?></div>-->
             <?php } ?>
 
         <?php endif; ?>

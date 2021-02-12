@@ -155,7 +155,7 @@ if (!empty($actual_by) && $today_date > $actual_by) {
             if (!empty($is_position_featured_top)) {
                 delete_post_meta($post_id, 'is_position_featured_top');
             }
-            echo '<span class="job_expires">закрита</span>';
+            echo '<span class="job_expires">closed</span>';
         }
         ?>
     </a>

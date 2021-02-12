@@ -4,17 +4,17 @@ if (!function_exists('classifiedcategory_taxonomy')) :
 
     function classifiedcategory_taxonomy() {
         $labels = array(
-            'name' => 'Категории',
-            'singular_name' => 'Категория',
-            'search_items' => 'Поиск Категории',
-            'all_items' => 'Все Категории',
-            'parent_item' => 'Родительская Категория:',
-            'edit_item' => 'Редактировать Категорию:',
-            'update_item' => 'Обновить Категорию',
-            'add_new_item' => 'Добавить новую Категорию',
-            'new_item_name' => 'Новая Категория имя',
-            'menu_name' => 'Категории',
-            'view_item' => 'Посмотреть Категории'
+            'name' => 'Categories',
+            'singular_name' => 'Category',
+            'search_items' => 'Category Search',
+            'all_items' => 'All Categories',
+            'parent_item' => 'Parent Category:',
+            'edit_item' => 'Edit Category:',
+            'update_item' => 'Update Category',
+            'add_new_item' => 'Add New Category',
+            'new_item_name' => 'New Category name',
+            'menu_name' => 'Categories',
+            'view_item' => 'View Category'
         );
 
         $args = array(
@@ -36,19 +36,19 @@ if (!function_exists('classified_tag_taxonomy')) :
 
     function classified_tag_taxonomy() {
         $labels = array(
-            'name' => 'Города',
-            'singular_name' => 'Города',
-            'search_items' => 'Поиск Города',
-            'popular_items' => ( 'Популярные Города' ),
+            'name' => 'Cities',
+            'singular_name' => 'Cities',
+            'search_items' => 'City Search',
+            'popular_items' => ( 'Popular Cities' ),
             'parent_item' => null,
             'parent_item_colon' => null,
-            'all_items' => 'Все Города',
-            'edit_item' => 'Редактировать Город:',
-            'update_item' => 'Обновить Город',
-            'add_new_item' => 'Добавить новый Город',
-            'new_item_name' => 'Новый Город имя',
-            'menu_name' => 'Города',
-            'view_item' => 'Посмотреть Города'
+            'all_items' => 'All Cities',
+            'edit_item' => 'Edit City:',
+            'update_item' => 'Update City',
+            'add_new_item' => 'Add New City',
+            'new_item_name' => 'New City name',
+            'menu_name' => 'Cities',
+            'view_item' => 'View Cities'
         );
 
         $args = array(
@@ -73,18 +73,18 @@ if (!function_exists('register_classified')) :
 
     function register_classified() {
         $labels = array(
-            'name' => 'Оголошення',
-            'singular_name' => 'Оголошення',
-            'add_new' => 'Додати нове Оголошення',
-            'add_new_item' => 'Додати нове Оголошення',
-            'edit_item' => 'Редагувати Оголошення',
-            'new item' => 'Нове Оголошення',
-            'all_items' => 'Всі Оголошення',
-            'view_item' => 'Переглянути Оголошення',
-            'search_items' => 'Пошук Оголошення',
-            'not_found' => 'Не знайдено',
-            'not_found_in_trash' => 'В корзине нет Оголошення',
-            'menu_name' => 'Оголошення'
+            'name' => 'Advertisement',
+            'singular_name' => 'Advertisement',
+            'add_new' => 'Add a new Ad',
+            'add_new_item' => 'Add a new Ad',
+            'edit_item' => 'Edit Ads',
+            'new item' => 'New Advertisement',
+            'all_items' => 'All Ads',
+            'view_item' => 'View Ads',
+            'search_items' => 'Search Ads',
+            'not_found' => 'Not Found',
+            'not_found_in_trash' => 'There are no ads in the trash',
+            'menu_name' => 'Advertisement'
         );
 
         $args = array(

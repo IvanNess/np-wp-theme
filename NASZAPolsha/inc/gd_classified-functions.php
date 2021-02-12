@@ -53,7 +53,7 @@ function alert_geodir_actual_by_meta($id) {
     if (!empty($geodir_actual_by_meta) && $today_date > $geodir_actual_by_meta) {
         $content .= '<div class="alert alert-danger alert-dismissible fade in text-center pull-right" style="position: relative;">';
         $content .= '<a href="#" class="close" data-dismiss="alert" aria-label="close" style="right: 10px;left: auto;">&times;</a>';
-        $content .= '<strong> не актуально </strong>';
+        $content .= '<strong> not relevant </strong>';
         $content .= '</div><div class="clearfix"></div>';
     }
     return $content;

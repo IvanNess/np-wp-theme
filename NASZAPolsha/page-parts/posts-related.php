@@ -20,7 +20,7 @@ if (is_singular('post')) {
 
     //related text
 //    $related_text = esc_html__("Related Articles", "kleo_framework");
-    $related_text = 'Останні записи';
+    $related_text = 'Recent addresses';
 
     $categories = get_the_category($post->ID);
 
@@ -96,7 +96,7 @@ if (!$categories) { return; }
 		</div>
 	</div>
 <!-- dodana reklama w artykulach -->
-<div><h3>Новини партнерів</h3><div>
+<div><h3>Partner news</h3><div>
 <div class="r38781"></div>
 <script type="text/javascript">
     (function() {
@@ -126,7 +126,7 @@ if (!$categories) { return; }
             };
         var container = document.createElement('div');
             container.id = idn;
-            container.innerHTML = 'загрузка...';
+            container.innerHTML = 'loading...';
         tag.appendChild(container);
         loadScript();
     })();

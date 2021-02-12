@@ -41,7 +41,7 @@ if (get_cfield('related_posts') != '') {
 <?php
 $author_details = get_field('author_details');
 if (!empty($author_details)) {
-    echo '<p class="author_name">Публікація від автора: ' . $author_details . '</p>';
+    echo '<p class="author_name">Publication from the author: ' . $author_details . '</p>';
 }
 ?>
 <?php while (have_posts()) : the_post(); ?>
@@ -69,7 +69,7 @@ if (!empty($author_details)) {
     );
 
 
-    $related_text = 'Останні публікації';
+    $related_text = 'Recent publications';
     $tax = 'publications_cat';
     $terms = wp_get_object_terms($post->ID, $tax, array('fields' => 'ids'));
 

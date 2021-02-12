@@ -28,20 +28,20 @@ $user_posts = get_bloginfo('url').'/members/'.get_the_author_meta( 'nickname', $
   
 if ( ! empty( $display_name ) )
  
-$author_details = '<p class="author_name">Публікація від автора: ' . $display_name . '</p>';
+$author_details = '<p class="author_name">Publication from the author: ' . $display_name . '</p>';
  
 //if ( ! empty( $user_description ) )
 // Author avatar and bio
  
 $author_details .= '<p class="author_details">' . get_avatar( get_the_author_meta('user_email') , 90 ) .  $user_description . '</p>';
  
-$author_details .= '<p class="author_links"><a href="'. $user_posts .'">Переглянути всі записи від ' . $display_name . '</a>';  
+$author_details .= '<p class="author_links"><a href="'. $user_posts .'">View all posts by ' . $display_name . '</a>';  
  
 // Check if author has a website in their profile
 if ( ! empty( $user_website ) ) {
  
 // Display author website link
-$author_details .= ' | <a href="' . $user_website .'" target="_blank" rel="nofollow">Веб-сайт</a></p>';
+$author_details .= ' | <a href="' . $user_website .'" target="_blank" rel="nofollow">Web-site</a></p>';
  
 } else { 
 // if there is no author website then just close the paragraph
@@ -66,15 +66,15 @@ if (!function_exists('publications_cat_taxonomy')) :
         $labels = array(
             'name' => 'Categories',
             'singular_name' => 'Categories',
-            'search_items' => 'Поиск Категории',
-            'all_items' => 'Все Категории',
-            'parent_item' => 'Родительская Категория:',
-            'edit_item' => 'Редактировать Категорию:',
-            'update_item' => 'Обновить Категорию',
-            'add_new_item' => 'Добавить новую Категорию',
-            'new_item_name' => 'Новая Категория имя',
+            'search_items' => 'Search Categories',
+            'all_items' => 'All Categories',
+            'parent_item' => 'Parent Category:',
+            'edit_item' => 'Edit Category:',
+            'update_item' => 'Update Category',
+            'add_new_item' => 'Add new Category',
+            'new_item_name' => 'New Category name',
             'menu_name' => 'Categories',
-            'view_item' => 'Посмотреть Категории'
+            'view_item' => 'View Categories'
         );
 
         $args = array(
@@ -94,19 +94,19 @@ if (!function_exists('publications_tag_taxonomy')) :
 
     function publications_tag_taxonomy() {
         $labels = array(
-            'name' => 'Теги',
-            'singular_name' => 'Тег',
-            'search_items' => 'Поиск Теги',
-            'popular_items' => ( 'Популярные Теги' ),
+            'name' => 'Tags',
+            'singular_name' => 'Tag',
+            'search_items' => 'Search Tags',
+            'popular_items' => ( 'Popular Tags' ),
             'parent_item' => null,
             'parent_item_colon' => null,
-            'all_items' => 'Все Теги',
-            'edit_item' => 'Редактировать Тег:',
-            'update_item' => 'Обновить Тег',
-            'add_new_item' => 'Добавить новый Тег',
-            'new_item_name' => 'Новый Тег имя',
-            'menu_name' => 'Теги',
-            'view_item' => 'Посмотреть Теги'
+            'all_items' => 'All Tags',
+            'edit_item' => 'Edit Tag:',
+            'update_item' => 'Update Tag',
+            'add_new_item' => 'Add new Tag',
+            'new_item_name' => 'New Tag name',
+            'menu_name' => 'Tags',
+            'view_item' => 'View tags'
         );
 
         $args = array(
@@ -126,18 +126,18 @@ if (!function_exists('register_publications')) :
 
     function register_publications() {
         $labels = array(
-            'name' => 'Публікації',
-            'singular_name' => 'Публікація',
-            'add_new' => 'Додати публікацію',
-            'add_new_item' => 'Додати публікацію',
-            'edit_item' => 'Редагувати публікацію',
-            'new item' => 'Нова публікація',
-            'all_items' => 'Всі Публікації',
-            'view_item' => 'Посмотреть публікацію',
-            'search_items' => 'Поиск Публікацій',
-            'not_found' => 'Не знайдено жодной Публікації',
-            'not_found_in_trash' => 'В корзине нет Публікації',
-            'menu_name' => 'Публікації'
+            'name' => 'Publications',
+            'singular_name' => 'Publication',
+            'add_new' => 'Add Publication',
+            'add_new_item' => 'Add Publication',
+            'edit_item' => 'Edit Publication',
+            'new item' => 'New Publication',
+            'all_items' => 'All Publications',
+            'view_item' => 'View Publication',
+            'search_items' => 'Search Publication',
+            'not_found' => 'No publication found',
+            'not_found_in_trash' => 'There are no publications in the trash',
+            'menu_name' => 'Publications'
         );
 
         $args = array(

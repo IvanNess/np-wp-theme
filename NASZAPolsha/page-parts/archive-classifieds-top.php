@@ -1,9 +1,9 @@
-<div class="archive-description"><strong>Оголошення про доступні вакансії розміщуються виключно в розділі "<a href="https://dev.nashapolsha.pl/my-jobs/add-job">Робота в Польщі</a>"
+<div class="archive-description"><strong>Ads for available vacancies are placed exclusively in the section "<a href="https://dev.nashapolsha.pl/my-jobs/add-job">Work in Poland</a>"
     <br>Oferty pracy są ogłaszane wyłącznie w sekcji „<a href="https://dev.nashapolsha.pl/my-jobs/add-job">Praca w Polsce</a>”.</strong></div>
 <section id="classifieds_categories_widget" class="widget" style="margin-bottom: 20px">
     <div class="classifieds-row">
-        <a class="btn letter-spacing-2px btn-highlight text-uppercase btn_add_classified" href="https://dev.nashapolsha.pl/my-classifieds/add-classified">+ Додати оголошення</a>
-        <h2 class="classifieds-title">Оголошення</h2>
+        <a class="btn letter-spacing-2px btn-highlight text-uppercase btn_add_classified" href="https://dev.nashapolsha.pl/my-classifieds/add-classified">+ Add an ad</a>
+        <h2 class="classifieds-title">Advertisements</h2>
         <?php
 //        $obj = get_queried_object();
         $query_id = get_queried_object_id();
@@ -15,7 +15,7 @@
         );
 
         $terms = get_terms('classifiedcategory', $cat_args);
-        echo '<div class="col-lg-6"><h4>Категорії</h4><select class="dynamic_select"><option value="https://dev.nashapolsha.pl/classifieds/">Усі</option>';
+        echo '<div class="col-lg-6"><h4>Categories</h4><select class="dynamic_select"><option value="https://dev.nashapolsha.pl/classifieds/">All</option>';
         foreach ($terms as $taxonomy) {
             $term_slug = $taxonomy->slug;
             $term_link = get_term_link($taxonomy->term_id, 'classifiedcategory');
@@ -55,7 +55,7 @@
     <section id="classified_tags_widget" class="widget widget_tag_cloud">
         <?php
         if (function_exists('wp_tag_cloud')) {
-            echo '<h3 class="widget-title">Міста</h3><div class="tagcloud">';
+            echo '<h3 class="widget-title">Cities</h3><div class="tagcloud">';
             wp_tag_cloud(array(
                 'smallest' => 8,
                 'largest' => 8,
